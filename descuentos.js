@@ -36,6 +36,7 @@ function onClickButtonPriceDiscount() {
     }
 
     const userCoupon= coupons.find(isCouponValueValid);
+    console.log("cupon encontrado es "+userCoupon);
 
     if(!userCoupon){
         alert("El cupón " + CouponValue + " no es válido");
