@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Deuda</title>
+</head>
+<body>
+    <header>
+        <h1>Pago deuda</h1>
+        <h2>Calcular cuanto es el valor mensual a pagar de acuerdo
+            al valor de la deuda y los ingresos mensuales de la persona
+        </h2>
+    </header>
+    
+    <section>
+        <form>
+
+            <label for="valorDeuda">Ingrese el valor deuda:</label>
+            <input type="number" id="valorDeuda">
+    
+            <label for="PagarEn">En cuantos meses quieres pagar:</label>
+            <input type="number" id="PagarEn">
+    
+            <label for="Ingreso">Cuanto es tu ingreso mensual:</label>
+            <input type="number" id="Ingreso">
+
+            <button type="button" onclick="CalculoPAgoMensual()">
+                Calcular
+            </button>
+
+            <p id="PagoMensual"></p>
+
+        </form>
+    </section>
+
+
+    <script src="./pagoDeuda.js"></script>
+    
+</body>
+</html>
